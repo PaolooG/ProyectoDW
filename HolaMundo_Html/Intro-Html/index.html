@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Mi primera web</title>
+    <style> 
+        table, th, td {
+           border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table style ="width: 500px;" > <!--TABLA--> <!--Borde negro-->
+        <thead> <!-- nos sirve para agrupar elementos de la tabla que se encuentren en la cabecera-->
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+
+        </thead>
+       <!--<tr> TABLE ROW, FILA
+        <th>Producto</th>
+        <th>Precio</th>
+    </tr> --> 
+    <tbody> <!--agrupar todas las filas que pertenezcan al cuerpo de nuestra tabla -->
+        <tr>
+            <td>Hola beats</td>
+            <td>Gratis</td>
+        </tr>
+
+        <tr>
+            <td>Chanchito feliz</td>
+            <td>19.90$</td>
+        </tr>
+
+        <tr>
+            <td>Chanchito feliz muy feliz</td>
+            <td>29.99$</td>
+        </tr>
+    </tbody>
+
+    <tfoot> <!--Se agrega una nueva fila al pie de la tabla-->
+        <td></td>
+        <td>Total: 49.80$</td>
+    </tfoot>
+    </table>
+    <!--ul es una lista no ordenada-->
+    <ul>
+        <li>Elemento 1</li> 
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li> <!--li list item, item de la lista-->
+    </ul>
+    <!--ol es una lista  ordenada-->
+    <ol>
+        <li value="50">Elemento 1</li> <!-- con el value puedo decir de donde empieza a contar-->
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li> <!--li list item, item de la lista-->
+        <li>
+            <ol>
+                <li style="list-style-type: lower-roman">sub elemento 1</li> <!-- Con el style y prop
+                sirve para anidar listas y ordenarlas sacando lower-alpha podemos seleccionar el valor para ordenar-->
+                <li style="list-style-type: lower-roman">sub elemento 2</li>
+                <li style="list-style-type: lower-roman">sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+
+
+
+    <form action="/formulario" method="POST"> <!--Con el method get enviar los valores de los campos a traves de la 
+    url maximo 255 caracteres en la url-->
+
+    <!--Con el method POST se envia en el header-->
+        <label for="nombre">Nombre</label>
+        <input value="chanchito" type="text" id="nombre" name="Nombre" placeholder="nombre"/> <!-- name sirve para que el servidor 
+            interprete los datos del formulario por el nombre que reciba, llave : name valor: contenido que tiene
+             nuestro campo    -->
+
+        <!--placeholder sirve para indicar el tipo de dato que tenemos que colocar en el cuadro,
+             puesto con letras suaves-->
+
+             <!-- type sirve para obligar el tipo de dato que se use del cuadro del formulario -->
+        <br>
+        <label for="apellido">Apellido</label>
+        <input value="feliz" type="text" id="apellido" name="Apellido" placeholder="apellido"/> <!-- value sirve
+        para mandar un valor por defecto, no sirve para textarea, en el text area se usa al final sin nada-->
+        <br>
+        <label for="comentario">Comentario</label> <br>
+        <textarea cols="50" rows="10" id="comentario" placeholder="Ingrese comentario " name="comentario"></textarea>
+        <br>
+        <button type="button"> Tipo boton</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo subimt</button> 
+        <!-- Este boton tomara toda la informacion de los campos del form y los enviara
+        al servidor, nosotros especificamos a donde iran los datos con el action y method dsp de la etiqueta form
+    -->
+    <!--Los botones con el input no son personalizables como con la etiqueta button-->
+            
+    </form>
+
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Chanchito feliz</h6>
+    <p>Chanchito feliz esta muy feliz</p>
+    <p>Chanchito tristee xd
+    </p>
+    <hr>
+    <h2>Chanchito felipe</h2>
+    <p>Texto un poco mas largo para ver la nueva etiqueta para <br><br>
+        buscar texto dentro de el xd
+    </p>
+    <!-- Este texto es un comentario y no aparecera en el explorador-->
+    <a target="_blank" href="https://www.google.com">Ir a google</a> <br>
+
+    <img src = "img/Messi.png" height="400"/>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <header> <!-- se usa para agrupar links y tambien alguna imagen o logo, no se pueden anidar y no se pueden poner 
+    dentro de la etiqueta footer-->
+    <h1 id="titulo">Blog de Paolo Genta</h1> <!-- Ponerle un id a una etiqueta sirve para poder modificar o anadirle
+    cosas de estilo o diseno para ese id que creamos--> <!-- para interactuar con mas de una seccion con el mismo id
+    se debe utilizar class-->
+    </header>
+    <div> <!--Mismo q section es para agrupar--> 
+        <p>Soy un parrafo dentro de un div</p>
+    </div>
+    <section> <!--definir secciones de nuestra pagina-->
+        <article class="post"> <!-- definir contenido independiente, definir los post de un blog, titulo descruipcion-->
+            <h2>Titulo de mi post</h2>
+            <p>Descripcion de mi post, hola como estas</p>
+            <img src = "img/Messi.png" width="400"/>
+            <p>Texto del articulo que hay aca y es texto de prueba, zeroko jasd</p>
+        </article>
+
+        <article class="post"> <!-- definir contenido independiente, definir los post de un blog, titulo descruipcion-->
+            <h2>Titulo de mi post2</h2>
+            <p>Descripcion de mi post2 , hola como estas</p>
+            <img src = "img/Messi.png" width="400"/>
+            <p>Texto del articulo que hay aca y es texto de prueba, zeroko jasd</p>
+        </article>
+        <article class="post"> <!-- definir contenido independiente, definir los post de un blog, titulo descruipcion-->
+            <h2>Titulo de mi post3</h2>
+            <p>Descripcion de mi post3 , hola como estas</p>
+            <img src = "img/Messi.png" width="400"/>
+            <p>Texto del articulo que hay aca y es texto de prueba, zeroko jasd</p>
+        </article>
+    </section> 
+    <footer>
+        <a href="#titulo">Ir al comienzo</a> <!--con el gato podemos referenciar unicamente un id para que nuestra pagina vaya a esa 
+        seccion con tal id-->
+        <!-- Se utiliza para colocar el pie de pagina de nuestra web (contacto, copyright etc)-->
+        <a href="mailto:paolo.genta@mail.udp.cl">Contactame aqui</a> <!--mailto sirve para abrir el mail
+        y enviar un mail al puesto-->
+        <p>Copyright 2021</p>
+    </footer>
+</body>
+</html>
