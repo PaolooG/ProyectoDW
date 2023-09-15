@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/Views/css/registro.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+</head>
+<body>
+    <nav class="navbar">
+        <ul></ul>
+        <ul class="right-buttons">
+            <li></li>
+            <li></li>
+            <li><a target="_blank" href="pag_pr.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="cont-form">
+        <form id="formulario" class="login-form shadow" method="post">
+            <section class="title-containerh">
+                <h1>Gran Primo</h1>
+                <div><h2>Registrate</h2></div>
+            </section>
+
+            <div class="input-container">
+                <label class="lbl">Nombres</label>
+                    <input type="text" name="nombre" placeholder="Ingresa tu nombre" required>
+            </div>
+
+            <div class="input-container">
+                <label class="lbl">Apellidos</label>
+                    <input type="text" name="apellido" placeholder="Ingresa tu apellido" required>
+            </div>
+    
+            <div class="input-container">
+                <label class="lbl">Email</label>
+                <input type="text" name="rut" placeholder="Ingresa tu rut" required>
+            </div>
+    
+            <div class="input-container">
+                <label class="lbl">Contraseña</label>
+                <input type="password" name ="password" placeholder="Ingresa tu contraseña" required>
+            </div>
+
+            <button class="btn-si" type="submit">Registrar</button>
+                <div class="text-container">
+                <p>Ya eres miembro? <a href="/Views/html/Ingreso.html" class="btn-singup">Inicia sesion</a></p>
+                </div>
+        </form>
+    </div>
+
+    <div class="div-foot">
+        <footer>
+            <div class="container">
+                <p>Siguenos en:</p>
+                <div class="redes-sociales">
+                    
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <p>&copy; 2023</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById("formulario").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            window.location.href = "/Views/html/admin.html"; 
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

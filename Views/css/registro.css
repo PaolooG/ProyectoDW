@@ -1,0 +1,208 @@
+body  {
+    background-image: url(/Views/imagenes/fondoGod.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar {
+    background-color: hsl(0, 12%, 11%);
+    overflow: hidden;
+}
+
+.right-buttons { 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.right-buttons li {
+    float: left;
+    margin-left: 10px;
+}
+
+.right-buttons a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.right-buttons a:hover {
+    background-color: #ddd;
+    color: rgb(139, 139, 139);
+}
+
+.cont-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    
+    top: 10rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Titillium Web";
+} 
+.login-form div{
+    position: relative;
+    margin: 1rem 2rem;
+    height:auto;
+}
+.lbl {
+    font-size: 1rem;
+}
+
+.title-containerh{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.title-containerh h1 a{
+    color: white;
+}
+.tittle-containerh h2{
+    color: white;
+    font-size: .5rem;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+input {
+    padding: 1rem 1rem;
+    background: none;
+    outline: 1px solid rgb(255, 255, 255);
+    border: none;
+    width: 20rem;
+    transition: background .3s ease;
+    color: #ddd;
+}
+input:focus {
+    background: white !;
+    color: rgb(211, 200, 200);
+} 
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    
+    padding: 1px 0px;
+    font-family: Titillium Web;
+    font-weight: 00;
+    position: relative;
+    background: linear-gradient(to right, black, #1d1a1a, black);
+}
+.shadow {
+    place-items: center;
+    color: #fff;
+    position: relative;
+    background: black;
+} 
+.shadow::before,
+.shadow::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    background: white;
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: animate 25s linear infinite;
+}
+
+.shadow::after {
+    filter: blur(10px);
+}
+
+.btn-si{
+    font-size: 1rem;
+}
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-login:hover {
+    background: rgb(213, 215, 216);
+}
+
+.btn-singup {
+    color: rgb(255, 255, 255);
+}
+
+.btn-singup:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+/**/
+button {
+    background-color: rgb(11, 84, 180);
+    border: none;
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+    width: 220px;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-size: 4rem;
+    font-family: "Titillium Web";
+}
+
+button {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s; 
+}
+
+button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover {
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+button:hover:after {
+    opacity: 1;
+    right: 50px;
+}
+
+
+footer {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px 0; 
+    text-align: center; 
+    margin-top: 15rem;
+}
+
+.redes-sociales {
+    font-size: 24px; 
+}
+
+.redes-sociales a {
+    color: #fff; 
+    margin: 0 10px; 
+    text-decoration: none;
+}

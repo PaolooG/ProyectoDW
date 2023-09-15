@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Views/css/admin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>Administrador</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul></ul>
+        <ul class="right-buttons">
+            <li></li>
+            <li><a target="_blank" href="/Views/html/eventos.html">Eventos</a></li>
+            <li><a target="_blank" href="/Views/html/pag_pr.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <section class="title-containerh">
+        <h1 class="h1-title">Gran Primo</h1>
+    </section>
+
+
+    <section class="section">
+        <div><h1>Bienvenido Administrador</h1></div>
+        <div><p class="psection">Seleccione una opcion:</p></div>
+    </section>
+
+    <div class="botones">
+        <button class="boton btn btn-primary" id="mostrarBtn">Generar evento</button>
+        <button class="boton btn btn-primary" id="mostrarBtn2">Finalizar evento</button>
+    </div>
+
+    <div id="ventanaInformacion" class="ventana-informacion">
+        <div class="contenido">
+            <h2>Crear Evento</h2>
+            <form action="">
+                <div>
+                    <label class="lbl">Nombre del evento:</label>
+                    <input type="text" name="nombre" placeholder="Nombre evento" required>
+                </div>
+                <div>
+                    <label class="lbl">Candidato1:</label>
+                    <input type="text" name="candidato1" placeholder="Nombre candidato" required>
+                </div>
+                <div>
+                    <label class="lbl">Candidato2:</label>
+                    <input type="text" name="candidato2" placeholder="Nombre candidato" required>
+                </div>
+                <div>
+                    <label class="lbl">Candidato3:</label>
+                    <input type="text" name="candidato3" placeholder="Nombre candidato" required>
+                </div>
+                <button class="btn-si" type="submit">Crear evento</button>
+            </form>
+            <button id="cerrarBtn">Cerrar</button>
+        </div>
+
+    </div>
+
+    <div id="ventanaInformacion2" class="ventana-informacion2">
+        <div class="contenido">
+            <h2>Finalizar evento</h2>
+            <h3>Eventos activos:</h3>
+            <ol class="ol">
+                <li>Nominados por convivencia <button class="bt-ol btn btn-primary">Finalizar</button></li>
+                <li>Nominados por la produccion <button class="bt-ol btn btn-primary">Finalizar</button></li>
+                <li>Ganador del reality <button class="bt-ol btn btn-primary">Finalizar</button></li>
+            </ol>
+            <button id="cerrarBtn2">Cerrar</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Siguenos en:</p>
+            <div class="redes-sociales">
+                <!-- Íconos de redes sociales -->
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <p>&copy; 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/Views/Scripts/admin.js"></script>
+</body>
+</html>

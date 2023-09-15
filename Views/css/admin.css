@@ -1,0 +1,128 @@
+body{
+    background-image: url(/Views/imagenes/fondoGod.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar {
+    background-color: hsl(0, 12%, 11%);
+    overflow: hidden;
+}
+
+.right-buttons { 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.right-buttons li {
+    float: left;
+    margin-left: 10px;
+}
+
+.right-buttons a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.right-buttons a:hover {
+    background-color: #ddd;
+    color: black;
+}
+section{
+    position: relative;
+    color: white;
+    font-family: Titillium Web;
+    top: 10rem;
+
+}
+h1 {
+    text-align: center;
+
+}
+.title-containerh{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.title-containerh h1 a{
+    color: white;
+}
+.h1-title{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    padding: 1px 0px;
+    font-family: Titillium Web;
+    font-weight: 00;
+    background: linear-gradient(to right, black, #1d1a1a, black);
+}
+.psection {
+    text-align: center;
+    font-size: 30px;
+}
+
+.botones {
+    text-align: center;
+    position: relative;
+    top: 10rem;
+}
+
+.boton{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+ol {
+    text-align: left;
+}
+
+.bt-ol {
+    text-align: right;
+    justify-content: right;
+}
+
+
+.ventana-informacion,.ventana-informacion2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contenido {
+    text-align: center;
+}
+
+#cerrarBtn {
+    margin-top: 10px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff; 
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 39rem;
+}
+
+.redes-sociales {
+    font-size: 24px; 
+}
+
+.redes-sociales a {
+    color: #fff; 
+    margin: 0 10px; 
+    text-decoration: none; 
+}

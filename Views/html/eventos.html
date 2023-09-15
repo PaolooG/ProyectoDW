@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Views/css/eventos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Eventos</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul></ul>
+        <ul class="right-buttons">
+            <li></li>
+            <li></li>
+            <li><a target="_blank" href="pag_pr.html">Home</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="title-containerh">
+        <h1>Gran Primo</h1>
+    </section>
+
+    <div class="login-form shadow">
+        <table class="styled-table">
+            <tr>
+                <th>ID</th>
+                <th>Nombre del evento</th>
+                <th>Detalles</th>
+                <th>Votar</th>
+                <th>Estado</th>
+                <th>Fecha creacion</th>
+            </tr>
+            <tr>
+                <td>123</td>
+                <td>Eliminacion "GranPrimo"</td>
+                <td><button id="mostrarBtn">Ver detalles</button></td>
+                <td><button id="mostrarBtn2">Votar</button></td>
+                <td>Finalizado</td>
+                <td>15/09/23</td>
+            </tr>
+            <tr>
+                <td>123</td>
+                <td>Nominados por convivencia</td>
+                <td><button id="mostrarBtn3">Ver detalles</button></td>
+                <td><button id="mostrarBtn4">Votar</button></td>
+                <td>En curso</td>
+                <td>15/09/23</td>
+            </tr>
+            <tr>
+                <td>123</td>
+                <td>Nominados por la produccion</td>
+                <td><button id="mostrarBtn5">Ver detalles</button></td>
+                <td><button id="mostrarBtn6">Votar</button></td>
+                <td>En curso</td>
+                <td>15/09/23</td>
+            </tr>
+            <tr>
+                <td>123</td>
+                <td>Ganador del reality</td>
+                <td><button id="mostrarBtn7">Ver detalles</button></td>
+                <td><button id="mostrarBtn8">Votar</button></td>
+                <td>En curso</td>
+                <td>15/09/23</td>
+            </tr>
+        </table>
+    </div>
+    
+
+
+    <div id="ventanaInformacion" class="ventana-informacion">
+        <div class="contenido">
+            <h2>Detalles del evento</h2>
+            <h3 style="color: black;">Eliminacion "Gran Primo"</h3>
+            <ol>
+                <li>Alessia Limon traverso -22votos</li>
+                <li>Lucas no tan crespo -33votos</li>
+                <li>Skarleth Labrailarina -14votos</li>
+            </ol>
+            <h4 style="color: black;">Estado del evento: Finalizado</h4>
+            <button id="cerrarBtn">Cerrar</button>
+        </div>
+    </div>
+
+    <div id="ventanaInformacion2" class="ventana-informacion2">
+        <div class="contenido">
+            <h2>Votar Encuesta</h2>
+            <h3 style="color: black;">Eliminacion "Gran Primo"</h3>
+
+                <div><label for=""> <input type="checkbox"/>Juan Arcoiris</label></div>
+                <div><label for=""> <input type="checkbox"/>Max Power</label></div>
+                <div><label for=""> <input type="checkbox"/>Lance Uperrcut</label></div>
+                <div><button class="btn btn-primary">Votar</button></div>
+
+            <h4 style="color: black;">Estado del evento: Finalizado</h4>
+            <button id="cerrarBtn2">Cerrar</button>
+        </div>
+    </div>
+
+    <div id="ventanaInformacion3" class="ventana-informacion3">
+        <div class="contenido">
+            <h2>Detalles del evento</h2>
+            <h3 style="color: black;">Nominados por convivencia</h3>
+            <ol>
+                <li>Alessia Limon traverso -22votos</li>
+                <li>Lucas no tan crespo -33votos</li>
+                <li>Skarleth Labrailarina -14votos</li>
+            </ol>
+            <h4 style="color: black;">Estado del evento: En curso</h4>
+            <button id="cerrarBtn3">Cerrar</button>
+        </div>
+    </div>
+
+    <div id="ventanaInformacion4" class="ventana-informacion4">
+        <div class="contenido">
+            <h2>Votar Encuesta</h2>
+            <h3 style="color: black;">Nominados por convivencia</h3>
+
+            <div><label for=""> <input type="checkbox"/>Juan Arcoiris</label></div>
+            <div><label for=""> <input type="checkbox"/>Max Power</label></div>
+            <div><label for=""> <input type="checkbox"/>Lance Uperrcut</label></div>
+
+            <div><button class="btn btn-primary">Votar</button></div>
+            <h4 style="color: black;">Estado del evento: En curso</h4>
+            <button id="cerrarBtn4">Cerrar</button>
+        </div>
+    </div>
+
+    <div id="ventanaInformacion5" class="ventana-informacion5">
+        <div class="contenido">
+            <h2>Detalles del evento</h2>
+            <h3 style="color: black;">Nominados por la produccion</h3>
+            <ol>
+                <li>Alessia Limon traverso -22votos</li>
+                <li>Lucas no tan crespo -33votos</li>
+                <li>Skarleth Labrailarina -14votos</li>
+            </ol>
+            <h4 style="color: black;">Estado del evento: En curso</h4>
+            <button id="cerrarBtn5">Cerrar</button>
+        </div>
+    </div>
+
+    <div id="ventanaInformacion6" class="ventana-informacion6">
+        <div class="contenido">
+            <h2>Votar Encuesta</h2>
+            <h3 style="color: black;">Nominados por la produccion</h3>
+
+            <div><label for=""> <input type="checkbox"/>Juan Arcoiris</label></div>
+            <div><label for=""> <input type="checkbox"/>Max Power</label></div>
+            <div><label for=""> <input type="checkbox"/>Lance Uperrcut</label></div>
+            <div><button class="btn btn-primary">Votar</button></div>
+
+            <h4 style="color: black;">Estado del evento: En curso</h4>
+            <button id="cerrarBtn6">Cerrar</button>
+        </div>
+    </div>
+
+    <div id="ventanaInformacion7" class="ventana-informacion7">
+        <div class="contenido">
+            <h2>Detalles del evento</h2>
+            <h3 style="color: black;">Ganador del reality</h3>
+            <ol>
+                <li>Alessia Limon traverso -22votos</li>
+                <li>Lucas no tan crespo -33votos</li>
+                <li>Skarleth Labrailarina -14votos</li>
+            </ol>
+            <h4 style="color: black;">Estado del evento: En curso</h4>
+            <button id="cerrarBtn7">Cerrar</button>
+        </div>
+    </div>
+
+    <div id="ventanaInformacion8" class="ventana-informacion8">
+        <div class="contenido">
+            <h2>Votar Encuesta</h2>
+            <h3 style="color: black;">Ganador del reality</h3>
+
+            <div><label for=""> <input type="checkbox"/>Juan Arcoiris</label></div>
+            <div><label for=""> <input type="checkbox"/>Max Power</label></div>
+            <div><label for=""> <input type="checkbox"/>Lance Uperrcut</label></div>
+            <div><button class="btn btn-primary">Votar</button></div>
+            
+            <h4 style="color: black;">Estado del evento: En curso</h4>
+            <button id="cerrarBtn8">Cerrar</button>
+        </div>
+    </div>
+
+    <div class="div-foot">
+        <footer>
+            <div class="container">
+                <p>Siguenos en:</p>
+                <div class="redes-sociales">
+                   
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <p>&copy; 2023</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/Views/Scripts/script.js"></script>
+</body>
+</html>
